@@ -1,17 +1,17 @@
 
 
-const arrayNumber = [numberStart, numberEnd];
-var numberStart = 4;
-var numberEnd = 12;
+const arrayNumber = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12];
+const numberStart = 4;
+const numberEnd = 12;
 
 
 const counter = (array, start, end) => {
-  var listNumber = [];
-  for(let i = start + 1; i <= end - 1; i++) {
-    listNumber.push(i);
+  const listNumber = [];
+  for(let i = start; i <= end; i++) {
+    listNumber.push(arrayNumber[i]);
   }
   return listNumber;
 };
 
-var result = counter(arrayNumber,numberStart, numberEnd);
+const result = counter(arrayNumber,numberStart, numberEnd);
 console.log(result);
